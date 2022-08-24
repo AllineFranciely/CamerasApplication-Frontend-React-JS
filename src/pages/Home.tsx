@@ -11,6 +11,7 @@ function Home() {
       <Header />
       <div className="body">
         <div className="forms">
+          <p><b>Cadastre uma câmera</b></p>
           <Formulario />
         </div>
         <img className="camera" src={Camera} alt="Cãmera de segurança" />

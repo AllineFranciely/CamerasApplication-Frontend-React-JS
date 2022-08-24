@@ -34,6 +34,7 @@ function Formulario() {
           id='Fabricante'
           onChange={onChangeSelect}
           required
+          placeholder="Selecione"
         >
           <option value="Secure Câmeras Inc">Secure Câmeras Inc</option>
           <option value="Surveillance Cams LLC">Surveillance Cams LLC</option>
@@ -46,6 +47,7 @@ function Formulario() {
           id='Serie'
           type='number'
           onChange={onChange}
+          placeholder="Número de Série"
           required
         />
         <button type='submit'>Cadastrar</button>
