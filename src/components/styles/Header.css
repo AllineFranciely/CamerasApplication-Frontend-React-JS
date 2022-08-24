@@ -1,0 +1,16 @@
+.headerInteiro {
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(6, 133, 252), rgb(64, 182, 250));
+  display: flex;
+  height: 85px;
+  justify-content: space-around;
+}
+
+.logoOctos {
+  height: 50%;
+}
+
+.textHeader {
+  color: white;
+  font-size: x-large;
+}

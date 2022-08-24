@@ -1,0 +1,13 @@
+
+.body {
+  background-image: linear-gradient(to bottom, rgb(85, 86, 87), rgb(7, 7, 7));
+  display: flex;
+}
+
+.camera {
+  width: 30%;
+}
+
+.pText {
+  color: white;
+}

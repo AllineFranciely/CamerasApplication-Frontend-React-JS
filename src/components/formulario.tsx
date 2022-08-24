@@ -1,5 +1,5 @@
-
 import { useForm } from "./useForm";
+import './styles/Formulario.css';
 
 function Formulario() {
 
@@ -19,7 +19,7 @@ function Formulario() {
 
   return (
     <form onSubmit={onSubmit}>
-      <div>
+      <div className="inputs">
         <input
           name='Nome'
           id='Nome'
