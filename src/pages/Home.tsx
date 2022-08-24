@@ -26,7 +26,7 @@ function Home() {
               sunt in culpa qui officia deserunt mollit anim
               id est laborum.
             </p>
-            <img src={Security} alt="Security" />
+            <img className="imgSecurity" src={Security} alt="Security" />
         </div>
       </div>
       <Footer />
