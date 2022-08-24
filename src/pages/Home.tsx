@@ -10,23 +10,25 @@ function Home() {
     <div className="homeInteiro">
       <Header />
       <div className="body">
-        <Formulario />
+        <div className="forms">
+          <Formulario />
+        </div>
         <img className="camera" src={Camera} alt="Cãmera de segurança" />
-        <div>
-        <p>
-              Lorem ipsum dolor sit amet,consectetur
-              adipisci elit, sed eiusmod tempor incidunt
-              ut labore et dolore magna aliqua.Ut enim
-              ad minim veniam, quis nostrum exercitationem
-              ullam corporis suscipit laboriosam, nisi ut
-              aliquid ex ea commodi consequatur. Quis aute
-              iure reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint obcaecat cupiditat non proident,
-              sunt in culpa qui officia deserunt mollit anim
-              id est laborum.
-            </p>
-            <img className="imgSecurity" src={Security} alt="Security" />
+        <div className="texto">
+          <p>
+            Lorem ipsum dolor sit amet,consectetur
+            adipisci elit, sed eiusmod tempor incidunt
+            ut labore et dolore magna aliqua.Ut enim
+            ad minim veniam, quis nostrum exercitationem
+            ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur. Quis aute
+            iure reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint obcaecat cupiditat non proident,
+            sunt in culpa qui officia deserunt mollit anim
+            id est laborum.
+          </p>
+          <img className="imgSecurity" src={Security} alt="Security" />
         </div>
       </div>
       <Footer />
