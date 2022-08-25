@@ -1,5 +1,6 @@
 .inputs {
   border: solid 1px white;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -7,16 +8,39 @@
 }
 
 #Nome {
-  margin-bottom: 5px;
+  border: solid 1px rgb(146, 142, 142);
+  border-radius: 5px;
+  font-size:medium;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-bottom: 3px;
   width: 400px;
 }
 
 #Fabricante {
-  margin-bottom: 5px;
-  width: 408px;
+  border: solid 1px rgb(146, 142, 142);
+  border-radius: 5px;
+  font-size:medium;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-bottom: 3px;
+  width: 407px;
 }
 
 #Serie {
-  margin-bottom: 5px;
+  border: solid 1px rgb(146, 142, 142);
+  border-radius: 5px;
+  font-size:medium;
+  padding-bottom: 7px;
+  padding-top: 7px;
   width: 400px;
+}
+
+.buttonCad {
+  background-image: linear-gradient(to bottom, rgb(6, 133, 252), rgb(64, 182, 250));
+  border: solid 1px white;
+  margin-bottom: 2px;
+  margin-left: 40%;
+  margin-top: 5px;
+  width: 20%;
 }

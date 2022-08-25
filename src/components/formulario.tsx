@@ -50,7 +50,7 @@ function Formulario() {
           placeholder="Número de Série"
           required
         />
-        <button type='submit'>Cadastrar</button>
+        <button className="buttonCad" type='submit'>Cadastrar</button>
       </div>
     </form>
   );
