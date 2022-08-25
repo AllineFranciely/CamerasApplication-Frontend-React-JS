@@ -1,4 +1,21 @@
 .footerInteiro {
   background-image: linear-gradient(to bottom, rgb(64, 182, 250), rgb(6, 133, 252));
-  height: 85px; 
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  text-align: center;
+}
+
+.buttonOctos {
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 8px;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.ass {
+  color: white;
+  margin-right: 25px;
 }
