@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export const useForm = (callback: any, initialState = {
-  Nome: "",
-  Fabricante: "",
-  Serie: "",
+  nome: "",
+  fabricante: "",
+  serie: "",
 }) => {
   const [values, setValues] = useState(initialState);
 

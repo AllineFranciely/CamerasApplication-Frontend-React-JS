@@ -7,7 +7,7 @@
   
 }
 
-#Nome {
+#nome {
   border: solid 1px rgb(146, 142, 142);
   border-radius: 5px;
   font-size:medium;
@@ -17,7 +17,7 @@
   width: 400px;
 }
 
-#Fabricante {
+#fabricante {
   border: solid 1px rgb(146, 142, 142);
   border-radius: 5px;
   font-size:medium;
@@ -27,7 +27,7 @@
   width: 407px;
 }
 
-#Serie {
+#serie {
   border: solid 1px rgb(146, 142, 142);
   border-radius: 5px;
   font-size:medium;

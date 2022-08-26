@@ -7,14 +7,15 @@ describe('1. Testa o componente Formulario', () => {
   it('Testa se a página Home contém os campos de input', () => {
     render(<Formulario />);
 
-    const inputName = screen.getByTestId('Nome');
+    const inputName = screen.getByPlaceholderText('Nome');
     expect(inputName).toBeInTheDocument();
 
-    const inputFabricante = screen.getByTestId('Fabricante');
+    const inputFabricante = screen.getByPlaceholderText('Fabricante');
     expect(inputFabricante).toBeInTheDocument();
 
-    const inputSerie = screen.getByTestId('Serie');
+    const inputSerie = screen.getByPlaceholderText('Número de Série');
     expect(inputSerie).toBeInTheDocument();
+
   });
 });
 
