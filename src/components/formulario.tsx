@@ -3,6 +3,10 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles/Formulario.css';
 
+interface NoCors extends RequestInit {
+  mode: RequestMode,
+} 
+
 function Formulario() {
 
   const initialState = {
@@ -40,8 +44,9 @@ function Formulario() {
 
       event.preventDefault();
 
-    const url = 'http://localhost:8000/cameras';
-    const obj = {
+    const url = 'https://backend-octos.vercel.app/api/cameras/create';
+    const obj: NoCors = {
+      mode: 'no-cors',
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -50,11 +55,13 @@ function Formulario() {
       body: JSON.stringify(values),
     }
     const response = await fetch(url, obj);
-    const data = await response.json();
-    if (data.message) {
-      setError(data.message);
-      return error;
-    }
+    console.log(response);
+    //const data = await response.json();
+    // if (await response.json()) {
+    //   const data = await response.json();
+    //   setError(data.message);
+    //   return error;
+    // }
     navigate('/cameras');
   }
 

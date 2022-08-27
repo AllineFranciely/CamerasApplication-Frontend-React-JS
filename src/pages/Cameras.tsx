@@ -19,7 +19,7 @@ function Cameras() {
 
   const fetchCameras = async () => {
 
-    const url = 'http://localhost:8000/cameras';
+    const url = 'https://backend-octos.vercel.app/api/cameras';
     const response = await fetch(url);
     const data = await response.json();
     setState((prevSt) => ({
