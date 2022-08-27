@@ -9,7 +9,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Conheça mais
+          <b>Conheça mais</b>
         </a>
       </button>
       <div className="ass">

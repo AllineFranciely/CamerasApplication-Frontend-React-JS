@@ -10,10 +10,10 @@ function Header() {
     <div className="headerInteiro">
       <img className="logoOctos" src={logoOctos} alt="Logo octos" />
       <button
-            onClick={() => navigate('/cameras')}
+            onClick={() => navigate('/')}
             className="buttonList"
           >
-            <b>Câmeras Cadastradas</b>
+            <b>Cadastrar Câmera</b>
           </button>
     </div>
   );

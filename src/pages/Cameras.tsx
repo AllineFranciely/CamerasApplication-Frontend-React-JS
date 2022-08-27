@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router';
-import './styles/Home.css';
+import HeaderList from '../components/HeaderList';
+import Footer from '../components/Footer';
+import Loader from '../components/Loader';
+import './styles/Cameras.css';
+import Camera from '../images/camera.png';
 
 interface Camera {
   id: number,
@@ -33,30 +36,23 @@ function Cameras() {
     fetchCameras();
   }, []);
 
-  const navigate = useNavigate();
-
-  function handleClick() {
-    navigate('/')
-  }
-
   return (
-    <div className="homeInteiro">
+    <div className="CamerasInteiro">
+      <HeaderList />
+      {loading && <Loader />}
       {!loading && (
-        <div>
+        <div className="Cameras">
           {state.nome.map((name: Camera) => (
-            <div key={name.id}>
-              <p>{name.nome}</p>
+            <div key={name.id} className="Card">
+              <p><b>{name.nome}</b></p>
               <p>{name.fabricante}</p>
               <p>{name.serie}</p>
+              <img className="imgCam" src={Camera} alt="Camera"/>
             </div>
           ))}
         </div>
       )}
-
-      <button
-        onClick={handleClick}>
-        Cadastrar nova câmera
-      </button>
+      <Footer />
     </div>
 
   )

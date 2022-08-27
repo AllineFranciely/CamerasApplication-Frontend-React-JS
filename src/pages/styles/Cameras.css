@@ -1,0 +1,35 @@
+.Cameras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  
+}
+
+.Card {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px 	rgb(64, 182, 250);
+  box-sizing: border-box;
+  border-style: ridge;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  width: 20%;
+}
+
+.Card:hover {
+  background-color: rgb(4, 73, 151);
+  color: aliceblue;
+  font-weight: bolder;
+  transform: scale(1.3);
+}
+
+.imgCam {
+  padding-bottom: 0px;
+  width: 20%;
+}

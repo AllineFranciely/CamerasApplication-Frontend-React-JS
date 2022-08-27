@@ -1,5 +1,4 @@
 import { useForm } from "./useForm";
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles/Formulario.css';
 
@@ -23,21 +22,6 @@ function Formulario() {
   async function formsCallback() {
   }
 
-  // const [state, setState] = useState({});
-  // const [input, setInput] = useState({
-  //   nome: '',
-  //   fabricante: '',
-  //   serie: 0
-  // });
-  // const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
-  //   setInput((prevState) => ({ ...prevState, [target.name]: target.value }))
-  // }
-
-  // const handleChangeSelect = ({ target }: React.ChangeEvent<HTMLSelectElement>) => {
-  //   setInput((prevState) => ({ ...prevState, [target.name]: target.value }))
-  // }
-
-  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -56,12 +40,6 @@ function Formulario() {
     }
     const response = await fetch(url, obj);
     console.log(response);
-    //const data = await response.json();
-    // if (await response.json()) {
-    //   const data = await response.json();
-    //   setError(data.message);
-    //   return error;
-    // }
     navigate('/cameras');
   }
 
@@ -101,14 +79,14 @@ function Formulario() {
           required
           value={values.serie}
         />
-        <button
+      </div>
+      <button
           className="buttonCad"
           type='submit'
           onClick={handleSubmit}
         >
-          Cadastrar
+          <b>Cadastrar</b>
         </button>
-      </div>
     </form>
   );
 }

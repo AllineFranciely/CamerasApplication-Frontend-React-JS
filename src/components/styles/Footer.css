@@ -7,12 +7,18 @@
 }
 
 .buttonOctos {
-  background-color: white;
+  background-image: linear-gradient(to bottom, rgb(6, 133, 252), rgb(64, 182, 250));
   border: solid 1px white;
-  border-radius: 8px;
+  border-radius: 5px;
+  color: aliceblue;
   height: 25px;
   margin-left: 25px;
   margin-top: 25px;
+}
+
+.buttonOctos:hover {
+  box-shadow: 0 7px 11px 0 rgb(252, 253, 253), 0 17px 50px 0 rgb(93, 131, 180);
+  cursor: pointer;
 }
 
 .ass {

@@ -1,0 +1,21 @@
+.loader {
+  animation: rotate 1.5s linear infinite;
+  border: 10px solid #eee;
+  border-bottom-color: rgb(25, 116, 236);
+  border-radius: 50%;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 21%;
+  margin-left: 47.5%;
+  margin-top: 2rem;
+  width: 50px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
