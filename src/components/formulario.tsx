@@ -38,6 +38,8 @@ function Formulario() {
 
   const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 
+      event.preventDefault();
+
     const url = 'http://localhost:8000/cameras';
     const obj = {
       method: 'POST',
@@ -45,7 +47,7 @@ function Formulario() {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name: values }),
+      body: JSON.stringify(values),
     }
     const response = await fetch(url, obj);
     const data = await response.json();

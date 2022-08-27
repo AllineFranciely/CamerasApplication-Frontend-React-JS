@@ -2,27 +2,36 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import './styles/Home.css';
 
+interface Camera {
+  id: number,
+  nome: string,
+  fabricante: string,
+  serie: number
+}
 
 function Cameras() {
 
-  // const [state, setState] = useState();
+  const [state, setState] = useState({
+    nome: [],
+
+  });
   const [loading, setLoading] = useState(true);
 
-  // const fetchCameras = async () => {
+  const fetchCameras = async () => {
 
-  //   const url = 'http://localhost:8000/cameras';
-  //   const response = await fetch(url);
-  //   const data = await response.json();
-  //   setState((prevSt) => ({
-  //     ...prevSt,
-  //     products: data,
-  //     loading: false,
-  //   }));
-  // };
+    const url = 'http://localhost:8000/cameras';
+    const response = await fetch(url);
+    const data = await response.json();
+    setState((prevSt) => ({
+      ...prevSt,
+      nome: data,
+    }));
+    setLoading(false);
+  };
 
-  // useEffect(() => {
-  //   fetchCameras();
-  // }, []);
+  useEffect(() => {
+    fetchCameras();
+  }, []);
 
   const navigate = useNavigate();
 
@@ -34,14 +43,22 @@ function Cameras() {
     <div className="homeInteiro">
       {!loading && (
         <div>
-          <p>oi</p>
-          <button
-            onClick={handleClick}>
-            Cadastrar noca câmera
-          </button>
+          {state.nome.map((name: Camera) => (
+            <div key={name.id}>
+              <p>{name.nome}</p>
+              <p>{name.fabricante}</p>
+              <p>{name.serie}</p>
+            </div>
+          ))}
         </div>
       )}
+
+      <button
+        onClick={handleClick}>
+        Cadastrar nova câmera
+      </button>
     </div>
+
   )
 }
 
