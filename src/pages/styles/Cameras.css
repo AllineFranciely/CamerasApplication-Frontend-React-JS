@@ -1,3 +1,7 @@
+.CamerasInteiro {
+  background-color: rgb(211, 243, 248);
+}
+
 .Cameras {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +13,7 @@
 
 .Card {
   align-items: center;
+  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

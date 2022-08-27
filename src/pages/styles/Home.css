@@ -1,5 +1,7 @@
 .homeInteiro {
-  background-image: linear-gradient(to bottom, rgb(174, 178, 184), rgb(7, 7, 7));
+  background-image: url('../../images/back.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -13,7 +15,7 @@
 .camera {
   height: 30%;
   margin-top: 50px;
-  width: 20%;
+  width: 30%;
 }
 
 .imgSecurity {
@@ -21,7 +23,12 @@
 }
 
 .texto {
+  color: white;
   max-width: 30%;
+}
+
+.t {
+  color: white;
 }
 
 .forms {
