@@ -12,6 +12,7 @@ function Header() {
       <button
             onClick={() => navigate('/cameras')}
             className="buttonList"
+            data-test-id="button"
           >
             <b>Câmeras Cadastradas</b>
           </button>

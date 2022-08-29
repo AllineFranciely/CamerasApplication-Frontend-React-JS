@@ -3,7 +3,7 @@ import HeaderList from '../components/HeaderList';
 import Footer from '../components/Footer';
 import Loader from '../components/Loader';
 import './styles/Cameras.css';
-import Camera from '../images/camera.png';
+import CameraImg from '../images/camera.png';
 
 interface Camera {
   id: number,
@@ -47,7 +47,7 @@ function Cameras() {
               <p><b>{name.nome}</b></p>
               <p>{name.fabricante}</p>
               <p>{name.serie}</p>
-              <img className="imgCam" src={Camera} alt="Camera"/>
+              <img className="imgCam" src={CameraImg} alt="Camera"/>
             </div>
           ))}
         </div>

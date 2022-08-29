@@ -18,7 +18,7 @@ function Home() {
         </div>
         <img className="camera" src={Camera} alt="Cãmera de segurança" />
         <div className="texto">
-          <p><b>
+          <p className="textoP"><b>
             Lorem ipsum dolor sit amet,consectetur
             adipisci elit, sed eiusmod tempor incidunt
             ut labore et dolore magna aliqua.Ut enim
