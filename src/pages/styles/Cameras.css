@@ -38,3 +38,11 @@
   padding-bottom: 0px;
   width: 20%;
 }
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .Card {
+    width: 30%;
+  }
+}

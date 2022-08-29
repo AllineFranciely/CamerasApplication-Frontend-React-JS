@@ -26,3 +26,20 @@
   box-shadow: 0 7px 11px 0 rgb(252, 253, 253), 0 17px 50px 0 rgb(93, 131, 180);
   cursor: pointer;
 }
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .logoOctos {
+    height: 40%;
+  }
+
+  .buttonList {
+    font-size: larger;
+    height: 50px;
+    margin-bottom: 2px;
+    margin-left: 30%;
+    margin-top: 5px;
+    width: 35%;
+  }
+}

@@ -67,14 +67,16 @@
     font-size:x-large;
   }
 
+  .texto {
+    color: white;
+    max-width: 100%;
+  }
+
   .textoP {
-    font-size: large;
-    margin-left: 53%;
-    text-align:center;
+    font-size: larger;
   }
 
   .imgSecurity {
-    margin-left: 20%;
-    width: 300%;
+    width: 95%;
   }
 }

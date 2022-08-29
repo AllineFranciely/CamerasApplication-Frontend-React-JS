@@ -30,3 +30,19 @@
 .b {
   color: aliceblue;
 }
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .buttonOctos {
+    font-size: larger;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 25%;
+  }
+
+  .ass {
+    margin-right: 10px;
+  }
+}
