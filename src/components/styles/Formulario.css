@@ -52,25 +52,108 @@
   cursor: pointer;
 }
 
-/* Para mobile */
-@media only screen and (max-width: 600px)
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
 {
   #nome {
-    margin-left: 7px;
-    width: 390px;
+    font-size:large;
+    width: 450px;
   }
   
   #fabricante {
-    margin-left: 7px;
-    width: 395px;
+    font-size:large;
+    width: 455px;
   }
   
   #serie {
-    margin-left: 7px;
-    width: 390px;
+    font-size:large;
+    width: 450px;
+  }
+
+  .buttonCad {
+    font-size: larger;
+    height: 35px;
+    margin-top: 15px;
+    width: 35%;
+  }
+}
+
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  #nome {
+    font-size:large;
+    margin-left: 5px;
+    width: 450px;
+  }
+  
+  #fabricante {
+    font-size:large;
+    margin-left: 5px;
+    width: 455px;
+  }
+  
+  #serie {
+    font-size:large;
+    margin-left: 5px;
+    width: 450px;
+  }
+
+  .buttonCad {
+    font-size: larger;
+    height: 35px;
+    margin-top: 15px;
+    width: 35%;
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  #nome {
+    font-size:large;
+    width: 450px;
+  }
+  
+  #fabricante {
+    font-size:large;
+    width: 455px;
+  }
+  
+  #serie {
+    font-size:large;
+    width: 450px;
+  }
+
+  .buttonCad {
+    font-size: larger;
+    height: 35px;
+    margin-top: 15px;
+    width: 35%;
+  }
+}
+
+/* Para mobile */
+@media only screen and (max-width: 600px)
+{
+  .inputs {
+    justify-content: center;
+  }
+
+  #nome {
+    width: 350px;
+  }
+  
+  #fabricante {
+    width: 355px;
+  }
+  
+  #serie {
+    width: 350px;
   }
 
   .buttonCad {
     font-size: larger;
   }
+  
 }

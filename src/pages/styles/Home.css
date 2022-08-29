@@ -40,6 +40,46 @@
   flex-direction: column;
 }
 
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
+{
+  .body {
+    margin-top: 97px;
+  }
+
+  .texto {
+    width: 100%;
+  }
+  
+  .t {
+    width: 100%;
+  }
+
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .homeInteiro {
+    background-size: cover;
+  }
+
+  .body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .texto {
+    width: 100%;
+  }
+  
+  .t {
+    font-size: xx-large;
+    width: 100%;
+  }
+  
+}
+
 /* Para mobile */
 @media only screen and (max-width: 600px)
 {
@@ -68,7 +108,6 @@
   }
 
   .texto {
-    color: white;
     max-width: 100%;
   }
 
@@ -80,3 +119,4 @@
     width: 95%;
   }
 }
+

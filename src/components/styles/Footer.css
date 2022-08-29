@@ -31,12 +31,46 @@
   color: aliceblue;
 }
 
+/* Para telas pequena / laptops */
+@media only screen and (max-width: 1024px)
+{
+  .buttonOctos {
+    height: 35px;
+  }
+}
+
+/* Para desktops / telas grandes */
+@media only screen and (min-width: 1025px)
+{
+  .buttonOctos {
+    font-size:large;
+    height: 45px;
+    width: 15%;
+  }
+
+  .ass {
+    font-size: medium;
+    margin-right: 55px;
+  }
+}
+
+/* Para Tablet */
+@media only screen and (max-width: 768px)
+{
+  .buttonOctos {
+    font-size:large;
+    height: 45px;
+    width: 15%;
+  }
+  
+}
+
 /* Para mobile */
 @media only screen and (max-width: 600px)
 {
   .buttonOctos {
-    font-size: larger;
-    height: 50px;
+    font-size: medium;
+    height: 45px;
     margin-left: 10px;
     margin-top: 20px;
     width: 25%;
